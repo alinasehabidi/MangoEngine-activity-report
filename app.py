@@ -150,7 +150,6 @@ elif section == "New SOPs that helped":
     st.write("These processes made it easier to understand requests, connect the right people, and keep follow-up moving.")
     sops = pd.DataFrame([["Inquiry form", "A Google Form is shared when an inquiry arrives.", "The team quickly sees if it is for a podcast, speaking chance, or another request."], ["Lead sorting and follow-up", "Opportunities are sorted and followed up in a clearer way.", "The right people can be connected faster and fewer leads are missed."], ["Office visit process", "A process was created for inviting people to the Burj Khalifa office.", "Visitor meetings are easier to organise."], ["Marketing-team connection", "A standard way to connect with the IMF / marketing team was set.", "Marketing requests can move with less confusion."]], columns=["SOP", "What changed", "How it helped"])
     st.dataframe(sops, width="stretch", hide_index=True)
-    st.markdown("<div class='warn'><b>Still needed:</b> there is no time-management SOP yet. Create one after measuring the current daily work.</div>", unsafe_allow_html=True)
     st.subheader("Tools that support the work")
     st.write("ChatGPT, Claude, other AI agents, and Canva AI are used to work faster on content, communication and routine tasks.")
     presenter_box("The main win is not only new tools. It is a clearer way to receive, sort and follow up on opportunities.", "Which process should we document next so anyone can follow it?", "The next SOP should protect time for product work.")

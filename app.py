@@ -160,7 +160,7 @@ else:
     support = pd.DataFrame([["Better process", "Helped set up the Google Form and a clearer way to manage leads and follow-ups."], ["More opportunities", "Connected with people who reached out and followed up so opportunities did not get lost."], ["Learning support", "Shared videos and reading, gave quizzes and tests, and kept a record of progress."], ["Product feedback", "Gave feedback on the MangoEngine presentation. The deck has already been improved and dashboard feedback is ready for when the product is available."], ["Webinar coaching", "Gave feedback on preparation, clear speaking, fewer fillers, and ending with a summary."], ["Memory support", "Introduced the explain-it-to-someone method, with 30-day and 60-day book summaries."]], columns=["Support area", "What I did"])
     st.dataframe(support, width="stretch", hide_index=True)
     st.subheader("How this helped")
-    one, two, three = st.columns(3)
+    one, two, three = st.columns(5)
     one.metric("Better focus", "More time for product work")
     two.metric("Learning record", "Quizzes and tests tracked")
     three.metric("Product feedback", "Deck improved")

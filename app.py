@@ -1,4 +1,4 @@
-"""MangoEngine activity report | 1 July–3 September 2026."""
+"""MengoEngine activity report | 1 July–3 September 2026."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ st.set_page_config(page_title="MengoEngine | Activity Report", page_icon="🥭",
 
 PERIOD = "1 July – 3 September 2026"
 SECTIONS = ["Meetings & outcomes", "Presentation & webinar feedback", "Events & networking", "Learning & development", "New SOPs that helped", "My support"]
-MEETINGS = pd.DataFrame({"Meeting type": ["MangoEngine daily meetings", "Event meetings", "Office / visitor meetings"], "Number": [42, 12, 18]})
+MEETINGS = pd.DataFrame({"Meeting type": ["MengoEngine daily meetings", "Event meetings", "Office / visitor meetings"], "Number": [42, 12, 18]})
 SOCIAL = pd.DataFrame({"Platform": ["Instagram", "Facebook", "YouTube", "X", "Threads"], "Followers": [101000, 198, 149, 22, 0]})
 AI_LEARNING = pd.DataFrame([
     ["AI Fundamentals & the Future of AI", "Done", "What AI, ML, GenAI and LLMs can do"],
@@ -70,7 +70,7 @@ if section == "Meetings & outcomes":
     st.write("Jainam attended **72 meetings**. Most were about MangoEngine, events, and office visitors.")
     a, b, c, d = st.columns(4)
     a.metric("Total meetings", "72")
-    b.metric("MangoEngine meetings", "42")
+    b.metric("MengoEngine meetings", "42")
     c.metric("Event meetings", "12")
     d.metric("Office / visitor meetings", "18")
     left, right = st.columns([1, 1.05])
@@ -80,13 +80,13 @@ if section == "Meetings & outcomes":
         st.plotly_chart(fig, width="stretch")
     with right:
         st.subheader("What came from the meetings")
-        st.markdown("- The MangoEngine presentation was improved after feedback.\n- People still need a clearer product explanation.\n- A dashboard is planned so people can see how the product works.\n- Compliance and backup-server planning were raised before launch.")
+        st.markdown("- The MengoEngine presentation was improved after feedback.\n- People still need a clearer product explanation.\n- A dashboard is planned so people can see how the product works.\n- Compliance and backup-server planning were raised before launch.")
         st.markdown("<div class='note'><b>Main result:</b> the meetings gave a clear product, presentation, and launch-readiness plan.</div>", unsafe_allow_html=True)
-    presenter_box("We had a strong meeting rhythm: 72 meetings, with 42 focused on MangoEngine.", "What should we improve first: the story, dashboard, or launch readiness?", "The feedback gave us a clear next-step plan.")
+    presenter_box("We had a strong meeting rhythm: 72 meetings, with 42 focused on MengoEngine.", "What should we improve first: the story, dashboard, or launch readiness?", "The feedback gave us a clear next-step plan.")
 
 elif section == "Presentation & webinar feedback":
     header("Presentation & webinar feedback", "What people asked, what changed, and what happens next")
-    st.subheader("Feedback on the MangoEngine presentation")
+    st.subheader("Feedback on the MengoEngine presentation")
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("**Questions heard many times**\n\n- What is MangoEngine?\n- Is Jainam building it himself?\n- How will it work?\n- How will it be personal for each employee?")
@@ -122,7 +122,7 @@ elif section == "Events & networking":
     st.subheader("Speaking and visibility pipeline")
     opportunities = pd.DataFrame([["November 2026", "TEDx", "University of Ras Al Khaimah", "Planned"], ["To be confirmed", "Product / speaking event", "University of Ras Al Khaimah", "Invited"], ["To be confirmed", "Invitation-only event", "Sri Lanka — 200 guests", "Invited"], ["March 2027", "Dubai Police event", "Dubai", "Planned"]], columns=["When", "Opportunity", "Place", "Status"])
     st.dataframe(opportunities, width="stretch", hide_index=True)
-    presenter_box("Events are growing the network and creating a strong speaking pipeline.", "Which opportunity gives the best chance to show MangoEngine clearly?", "Now we must turn visibility into product understanding.")
+    presenter_box("Events are growing the network and creating a strong speaking pipeline.", "Which opportunity gives the best chance to show MengoEngine clearly?", "Now we must turn visibility into product understanding.")
 
 elif section == "Learning & development":
     header("Learning & development", "Book reading and AI learning sessions")

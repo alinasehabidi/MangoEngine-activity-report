@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-st.set_page_config(page_title="MangoEngine | Activity Report", page_icon="🥭", layout="wide")
+st.set_page_config(page_title="MengoEngine | Activity Report", page_icon="🥭", layout="wide")
 
 PERIOD = "1 July – 3 September 2026"
 SECTIONS = ["Meetings & outcomes", "Presentation & webinar feedback", "Events & networking", "Learning & development", "New SOPs that helped", "My support"]
@@ -55,7 +55,7 @@ div[data-testid="stHorizontalBlock"]:has([data-testid="stMetric"]:hover) [data-t
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    st.header("🥭 MangoEngine")
+    st.header("🥭 MengoEngine")
     st.caption("Simple activity report")
     st.divider()
     st.radio("Choose a section", SECTIONS, key="report_section")

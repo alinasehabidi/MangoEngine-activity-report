@@ -67,7 +67,7 @@ section = st.session_state.report_section
 
 if section == "Meetings & outcomes":
     header("Meetings & outcomes", PERIOD)
-    st.write("Jainam attended **72 meetings**. Most were about MangoEngine, events, and office visitors.")
+    st.write("Jainam attended **72 meetings**. Most were about MengoEngine, events, and office visitors.")
     a, b, c, d = st.columns(4)
     a.metric("Total meetings", "72")
     b.metric("MengoEngine meetings", "42")
